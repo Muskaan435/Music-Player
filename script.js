@@ -1,3 +1,4 @@
+//Lists of All Songs
 var arr = [
     {songName: "Kashmir",url:"./songs/kashmir.mp3",img:"./images/Animal-2-2.jpeg", duration: "3:38"},
     {songName: "Admirin",url:"./songs/Admirin' You.mp3",img:"./images/admirin.jpg", duration: "3:31"},
@@ -10,11 +11,12 @@ var audio = new Audio();
 var poster = document.querySelector('#left');
 var allSongs = document.querySelector("#all-songs"); 
 let selectedSong = 0;
-
-
 let backward = document.querySelector('#backward');
 let play = document.querySelector('#play');
 let forward= document.querySelector('#forward');
+
+
+// Add Songs with the help of JS
 
 function mainFunction(){
     
@@ -36,6 +38,8 @@ function mainFunction(){
 }
 mainFunction();
 
+//play the selected Song
+
 allSongs.addEventListener("click", function(dets){
     selectedSong = dets.target.id;
     mainFunction();
@@ -43,6 +47,8 @@ allSongs.addEventListener("click", function(dets){
     flag = 1;
     audio.play();
 })
+
+//play && pause actions 
 var flag = 0;
 play.addEventListener("click", function(){
     if(flag == 0){
@@ -57,6 +63,8 @@ play.addEventListener("click", function(){
     }
 })
 
+
+// BackWord button Features
 backward.addEventListener("click", function(){
     if(selectedSong > 0){
         selectedSong--;
@@ -69,6 +77,9 @@ backward.addEventListener("click", function(){
     }
 })
 
+
+// forward button features
+
 forward.addEventListener("click", function(){
     if(selectedSong < arr.length - 1){
         selectedSong++
@@ -79,6 +90,5 @@ forward.addEventListener("click", function(){
     else{
         forward.style.opacity = 0.3;
     }
-})
-
+});
 
