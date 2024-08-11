@@ -3,7 +3,7 @@ var arr = [
     {songName: "Admirin",url:"./songs/Admirin' You.mp3",img:"./images/admirin.jpg", duration: "3:31"},
     {songName: "Joker",url:"./songs/JOKER.mp3",img:"./images/joker.jpg", duration: "5:39"},
     {songName: "Suniyan",url:"./songs/SUNIYAN.mp3",img:"./images/suniya.jpg", duration: "3:31"},
-    {songName: "Notning breaks like a heart",url:"./songs/nothing breaks like a heart.mp3",img:"./images/mc.webp", duration: "4:00"}
+    {songName: "Notning Breaks like a heart",url:"./songs/nothing breaks like a heart.mp3",img:"./images/mc.webp", duration: "4:00"}
 ]
 
 var audio = new Audio();
